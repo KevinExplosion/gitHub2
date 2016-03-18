@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <https://github.com/KevinExplosion/gitHub>` this repository
+* `git clone <https://github.com/KevinExplosion/gitHub2>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
