@@ -1,4 +1,4 @@
-var apiKey = require('./../inv').apiKey;
+var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
   $('#searchGit').click(function() {
