@@ -5,6 +5,7 @@ $(document).ready(function() {
     var gitName = $("#searchGit").val();
     $('#searchGit').val("");
     $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
+      $('showGitName').text(response.main.name);
       console.log(response);
     }).fail(function(error){
       console.log(error.responseJSON.message);
