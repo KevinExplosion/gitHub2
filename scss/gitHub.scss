@@ -9,6 +9,12 @@ $fontFam : Helvetica, arial, nimbussansl, liberat;
   background: $gitGray;
   border-bottom: 1px solid $gitDarkGray;
   border-radius: 0 0 0 0;
+  padding-top: 9px;
+  padding-left: 20px;
+  img{
+    height: 26px;
+    width: 26px;
+  }
 }
 
 .jumbotron {
@@ -37,7 +43,7 @@ button {
 
 //all things footer related found below
 footer {
-  align-content: center;
+  text-align: center;
   font-size: 12px;
   img.footerIcon {
     // display: block;
@@ -48,6 +54,10 @@ footer {
 
 .footerContain {
   height: 10px;
+}
+
+.copyright {
+  float: left;
 }
 
 .myGitLink {
