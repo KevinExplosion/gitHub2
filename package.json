@@ -26,5 +26,13 @@
     "jshint": "^2.9.1",
     "vinyl-source-stream": "^1.1.0"
   },
-  "description": ""
+  "description": "A practice site using Node.js to run the GitHub API",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinExplosion/gitHub2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinExplosion/gitHub2/issues"
+  },
+  "homepage": "https://github.com/KevinExplosion/gitHub2#readme"
 }
