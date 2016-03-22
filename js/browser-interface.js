@@ -4,12 +4,11 @@ var displayGit = require('./../js/gitHub.js').displayGit;
 
 $(document).ready(function() {
   $('#searchButton').click(function() {
-    console.log(response);
     debugger;
+    console.log(response);
     event.preventDefault();
 
-    gitName = $('#searchGit').val();
-    $('#gitName').val("");
-    displayGit();
+    var gitName = $('#searchGit').val();
+    displayGit(gitName);
   });
 });
