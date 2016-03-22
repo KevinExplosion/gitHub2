@@ -1,20 +1,15 @@
 var apiKey = require('./../.env').apiKey;
-var gitName;
-var login;
+var displayGit = require('./../js/gitHub.js').displayGit;
+
 
 $(document).ready(function() {
   $('#searchButton').click(function() {
+    console.log(response);
+    debugger;
     event.preventDefault();
-    
-    var gitName = $("#searchGit").val();
-    $('#searchGit').val("");
-    $.get('https://api.github.com/users/'+ gitName +'?access_token=' + apiKey).then(function(response){
-      // console.log(response);
-      $('.showGitName').text("Repositories for" +response.owner.login);
-      console.log(response);
-    }).fail(function(error){
-      console.log(error.responseJSON.message);
-      $('.showGitName').text(error.message);
-    });
+
+    gitName = $('#searchGit').val();
+    $('#gitName').val("");
+    displayGit();
   });
 });
